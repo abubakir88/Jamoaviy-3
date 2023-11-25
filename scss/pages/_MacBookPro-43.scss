@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.btn-first-type {
+  border: none;
+  background: #ffc000;
+  font-size: 14px;
+  padding: 10px 32px;
+  cursor: pointer;
+}
+.btn-first-type:hover {
+  background: #ffd65d;
+}
+
+.btn-second-type {
+  border: none;
+  background-color: #dbdee7;
+  font-size: 14px;
+  padding: 10px 32px;
+  cursor: pointer;
+}
+.btn-second-type:hover {
+  background: #eeeeee;
+}
+
+// HERO SECTION
+
+.MacPro43-main-section {
+  background: #fafafa;
+  padding-top: 176px;
+  font-family: "Rubic";
+  font-family: "Montserrat", sans-serif;
+  .MacPro43-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 128px;
+    margin-bottom: 64px;
+    .M-left {
+      max-width: 460px;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      .left-top {
+        margin-bottom: 24px;
+        img {
+          max-width: 460px;
+          width: 100%;
+          height: auto;
+        }
+      }
+      .left-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 460px;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        img {
+          max-width: 101px;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+    .M-right {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      h1,
+      h2 {
+        font-weight: 700;
+      }
+      p {
+        max-width: 558px;
+        width: 100%;
+        height: 44px;
+        font-size: 16px;
+      }
+      a {
+        font-size: 12px;
+        opacity: 0.4;
+      }
+      .size {
+        button {
+          width: 48px;
+          height: 48px;
+          font-weight: 700;
+          font-size: 16px;
+          padding: 12px;
+          background: transparent;
+          border-radius: 6px;
+          border: 1px solid #dbdee7;
+          cursor: pointer;
+        }
+        button:hover {
+          background-color: #dbdee7;
+        }
+        button:active {
+          background: #ffd65d;
+        }
+      }
+      .icons {
+        max-width: 348px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 13px;
+        padding-top: 8px;
+        div {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+        }
+        span {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1155px) {
+  .MacPro43-content {
+    display: flex;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .left-bottom {
+    display: none !important;
+  }
+  .M-right {
+    margin-top: -100px;
+  }
+}
+
+// Похожие товары // Similar products SECTION
+
+.similar-products {
+  .s-products-content {
+    .s-cards {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+      .card {
+        width: 264px;
+        height: 522px;
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: 0px 0px 98px 0px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        h4 {
+          min-width: 245px;
+          width: 100%;
+          color: var(--Black, #000);
+          font-variant-numeric: lining-nums proportional-nums;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 140%; /* 19.6px */
+          letter-spacing: 0.75px;
+          text-transform: uppercase;
+          padding-left: 13px;
+          margin-bottom: 8px;
+        }
+        p {
+          font-size: 14px;
+          min-width: 245px;
+          width: 100%;
+          padding-left: 13px;
+        }
+        .rate-price {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-left: 13px;
+          span {
+            font-size: 11px;
+            font-weight: 700;
+          }
+        }
+        .card-buttons {
+          button {
+            margin-left: 13px;
+            max-width: 238px;
+            width: 100%;
+            height: 36px;
+            border-radius: 6px;
+            margin-top: 8px;
+          }
+        }
+      }
+      .card:hover {
+        transform: scale(1.01);
+        transition: 0.8;
+        box-shadow: 1px 1px 10px 3px grey;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 589px) {
+  .s-products-content {
+    .s-cards {
+      display: flex;
+      align-items: center;
+      justify-content: center !important;
+      margin: 0 auto;
+    }
+  }
+}
+
+// Лучшие категории // BEST CATEGORY SECTION
+
+.best-category {
+  .best-content {
+    margin-bottom: 64px;
+    h1 {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .b-cards {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+      .b-card {
+        width: 265px;
+        height: 350px;
+        overflow: hidden;
+        border-radius: 8px;
+        cursor: pointer;
+        p {
+          font-size: 25px;
+          text-align: center;
+          color: #000;
+          margin-top: 25px;
+        }
+      }
+      .b-card:hover {
+        transform: scale(1.01);
+        transition: 0.8;
+        box-shadow: 1px 1px 10px 3px grey;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 589px) {
+  .best-content {
+    .b-cards {
+      display: flex;
+      justify-content: center !important;
+    }
+  }
+}
